@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleconsulta - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>Dra. Ana Costa</h3>
+                <p>Cardiologista</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="profissional.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="profissional-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="profissional-prontuarios.html" class="nav-link"><i class="fas fa-notes-medical"></i>Prontuários</a></li>
+                <li class="nav-item"><a href="profissional-receitas.html" class="nav-link"><i class="fas fa-pills"></i>Receitas Digitais</a></li>
+                <li class="nav-item"><a href="profissional-pacientes.html" class="nav-link"><i class="fas fa-users"></i>Meus Pacientes</a></li>
+                <li class="nav-item"><a href="profissional-teleconsulta.html" class="nav-link active"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Teleconsulta</h1>
+        <div class="header-actions">
+            <button class="notification-btn"><i class="fas fa-plus"></i>Nova Teleconsulta</button>
+            <button class="notification-btn"><i class="fas fa-cog"></i>Configurações</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Próximas Teleconsultas -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-video"></i>Próximas Teleconsultas</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Ana Paula</h3>
+                    <p class="action-desc">Primeira consulta - 16:00<br>22/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Teleconsulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">João Silva</h3>
+                    <p class="action-desc">Retorno - 10:00<br>25/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Teleconsulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Maria Santos</h3>
+                    <p class="action-desc">Avaliação - 14:00<br>28/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Teleconsulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Histórico de Teleconsultas -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-history"></i>Histórico de Teleconsultas</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Carlos Oliveira</h3>
+                    <p class="action-desc">Realizada em: 10/01/2025<br>Duração: 25 minutos</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Avaliação</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Pedro Almeida</h3>
+                    <p class="action-desc">Realizada em: 08/01/2025<br>Duração: 30 minutos</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Avaliação</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Fernanda Costa</h3>
+                    <p class="action-desc">Realizada em: 05/01/2025<br>Duração: 20 minutos</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Avaliação</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Agendar Nova Teleconsulta -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-plus-circle"></i>Agendar Nova Teleconsulta</h2>
+            <div class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-user"></i>Paciente</label>
+                        <select class="form-input">
+                            <option value="">Selecione o paciente</option>
+                            <option value="joao-silva">João Silva</option>
+                            <option value="maria-santos">Maria Santos</option>
+                            <option value="carlos-oliveira">Carlos Oliveira</option>
+                            <option value="pedro-almeida">Pedro Almeida</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-calendar"></i>Data</label>
+                        <input type="date" class="form-input" min="2025-01-15">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-clock"></i>Horário</label>
+                        <select class="form-input">
+                            <option value="">Selecione um horário</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-stopwatch"></i>Duração</label>
+                        <select class="form-input">
+                            <option value="20">20 minutos</option>
+                            <option value="30">30 minutos</option>
+                            <option value="45">45 minutos</option>
+                            <option value="60">60 minutos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-comment"></i>Motivo da Consulta</label>
+                    <textarea class="form-input" rows="3" placeholder="Descreva o motivo da teleconsulta..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-link"></i>Link da Reunião</label>
+                    <input type="url" class="form-input" placeholder="https://meet.google.com/...">
+                </div>
+                <div class="form-actions">
+                    <button class="btn-secondary"><i class="fas fa-save"></i>Salvar Rascunho</button>
+                    <button class="btn-primary"><i class="fas fa-calendar-plus"></i>Agendar Teleconsulta</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

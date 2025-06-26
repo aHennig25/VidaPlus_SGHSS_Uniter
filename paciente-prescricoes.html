@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Prescrições - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>João Silva</h3>
+                <p>Paciente</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="paciente.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="paciente-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="paciente-exames.html" class="nav-link"><i class="fas fa-flask"></i>Meus Exames</a></li>
+                <li class="nav-item"><a href="paciente-historico.html" class="nav-link"><i class="fas fa-notes-medical"></i>Histórico Clínico</a></li>
+                <li class="nav-item"><a href="paciente-prescricoes.html" class="nav-link active"><i class="fas fa-pills"></i>Prescrições</a></li>
+                <li class="nav-item"><a href="paciente-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Minhas Prescrições</h1>
+        <div class="header-actions">
+            <button class="notification-btn"><i class="fas fa-plus"></i>Nova Solicitação</button>
+            <button class="notification-btn"><i class="fas fa-download"></i>Baixar Todas</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Prescrições Ativas -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-pills"></i>Prescrições Ativas</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Losartana 50mg</h3>
+                    <p class="action-desc">Uso contínuo<br>Validade: 30/03/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Baixar Receita</button>
+                        <button class="btn-secondary">Solicitar Renovação</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Metformina 850mg</h3>
+                    <p class="action-desc">Uso contínuo<br>Validade: 15/04/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Baixar Receita</button>
+                        <button class="btn-secondary">Solicitar Renovação</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Histórico de Prescrições -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-history"></i>Histórico de Prescrições</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Ibuprofeno 400mg</h3>
+                    <p class="action-desc">Finalizada em: 10/12/2024</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Amoxicilina 500mg</h3>
+                    <p class="action-desc">Finalizada em: 20/11/2024</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Solicitar Renovação -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-sync-alt"></i>Solicitar Renovação</h2>
+            <div class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-pills"></i>Medicamento</label>
+                        <select class="form-input">
+                            <option value="">Selecione o medicamento</option>
+                            <option value="losartana">Losartana 50mg</option>
+                            <option value="metformina">Metformina 850mg</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-user-md"></i>Profissional</label>
+                        <select class="form-input">
+                            <option value="">Selecione o profissional</option>
+                            <option value="dr-carlos">Dr. Carlos Mendes</option>
+                            <option value="dra-ana">Dra. Ana Costa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-comment"></i>Observações</label>
+                    <textarea class="form-input" rows="3" placeholder="Descreva o motivo da renovação..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-primary"><i class="fas fa-paper-plane"></i>Enviar Solicitação</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

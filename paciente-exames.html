@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Exames - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>João Silva</h3>
+                <p>Paciente</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="paciente.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="paciente-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="paciente-exames.html" class="nav-link active"><i class="fas fa-flask"></i>Meus Exames</a></li>
+                <li class="nav-item"><a href="paciente-historico.html" class="nav-link"><i class="fas fa-notes-medical"></i>Histórico Clínico</a></li>
+                <li class="nav-item"><a href="paciente-prescricoes.html" class="nav-link"><i class="fas fa-pills"></i>Prescrições</a></li>
+                <li class="nav-item"><a href="paciente-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Meus Exames</h1>
+        <div class="header-actions">
+            <button class="notification-btn">
+                <i class="fas fa-plus"></i>
+                Agendar Exame
+            </button>
+            <button class="notification-btn">
+                <i class="fas fa-download"></i>
+                Baixar Todos
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Exames Pendentes -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-clock"></i>
+                Exames Pendentes
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="action-title">Hemograma Completo</h3>
+                    <p class="action-desc">Solicitado por: Dr. Carlos Mendes<br>Data: 10/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Agendar</button>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="action-title">Eletrocardiograma</h3>
+                    <p class="action-desc">Solicitado por: Dra. Ana Costa<br>Data: 08/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Agendar</button>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3 class="action-title">Glicemia em Jejum</h3>
+                    <p class="action-desc">Solicitado por: Dr. Carlos Mendes<br>Data: 05/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Agendar</button>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exames Realizados -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-check-circle"></i>
+                Exames Realizados
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="action-title">Hemograma Completo</h3>
+                    <p class="action-desc">Realizado em: 08/01/2025<br>Resultado: Normal</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="action-title">Eletrocardiograma</h3>
+                    <p class="action-desc">Realizado em: 05/01/2025<br>Resultado: Normal</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3 class="action-title">Glicemia em Jejum</h3>
+                    <p class="action-desc">Realizado em: 03/01/2025<br>Resultado: 95 mg/dL</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3 class="action-title">Ressonância do Joelho</h3>
+                    <p class="action-desc">Realizado em: 30/12/2024<br>Resultado: Tendinite patelar</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agendar Novo Exame -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-plus-circle"></i>
+                Agendar Novo Exame
+            </h2>
+            
+            <!-- Formulário de Agendamento de Exame -->
+            <div class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-flask"></i>
+                            Tipo de Exame
+                        </label>
+                        <select class="form-input">
+                            <option value="">Selecione o tipo de exame</option>
+                            <option value="hemograma">Hemograma Completo</option>
+                            <option value="glicemia">Glicemia em Jejum</option>
+                            <option value="colesterol">Perfil Lipídico</option>
+                            <option value="ecg">Eletrocardiograma</option>
+                            <option value="eco">Ecocardiograma</option>
+                            <option value="raio-x">Raio-X</option>
+                            <option value="ressonancia">Ressonância Magnética</option>
+                            <option value="tomografia">Tomografia Computadorizada</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-hospital"></i>
+                            Local de Realização
+                        </label>
+                        <select class="form-input">
+                            <option value="">Selecione o local</option>
+                            <option value="lab-central">Laboratório Central</option>
+                            <option value="lab-especializado">Laboratório Especializado</option>
+                            <option value="centro-imagem">Centro de Imagem</option>
+                            <option value="hospital">Hospital Principal</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-calendar"></i>
+                            Data Preferencial
+                        </label>
+                        <input type="date" class="form-input" min="2025-01-15">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-clock"></i>
+                            Horário Preferencial
+                        </label>
+                        <select class="form-input">
+                            <option value="">Selecione um horário</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">
+                        <i class="fas fa-comment"></i>
+                        Observações
+                    </label>
+                    <textarea class="form-input" rows="3" placeholder="Informações adicionais sobre o exame..."></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button class="btn-secondary">
+                        <i class="fas fa-search"></i>
+                        Verificar Disponibilidade
+                    </button>
+                    <button class="btn-primary">
+                        <i class="fas fa-calendar-plus"></i>
+                        Agendar Exame
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instruções para Exames -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i>
+                Instruções para Exames
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="action-title">Exames de Sangue</h3>
+                    <p class="action-desc">Jejum de 8-12 horas<br>Evitar exercícios 24h antes</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Instruções</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="action-title">Eletrocardiograma</h3>
+                    <p class="action-desc">Não fazer exercícios 2h antes<br>Evitar cremes na pele</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Instruções</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3 class="action-title">Exames de Imagem</h3>
+                    <p class="action-desc">Remover objetos metálicos<br>Trazer exames anteriores</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Instruções</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

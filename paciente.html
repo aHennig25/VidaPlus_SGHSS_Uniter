@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Paciente - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>João Silva</h3>
+                <p>Paciente</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="paciente.html" class="nav-link active"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="paciente-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="paciente-exames.html" class="nav-link"><i class="fas fa-flask"></i>Meus Exames</a></li>
+                <li class="nav-item"><a href="paciente-historico.html" class="nav-link"><i class="fas fa-notes-medical"></i>Histórico Clínico</a></li>
+                <li class="nav-item"><a href="paciente-prescricoes.html" class="nav-link"><i class="fas fa-pills"></i>Prescrições</a></li>
+                <li class="nav-item"><a href="paciente-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Dashboard do Paciente</h1>
+        <div class="header-actions">
+            <button class="notification-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+            <button class="notification-btn">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dashboard Stats -->
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Próxima Consulta</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                </div>
+                <div class="stat-value">15/01/2025</div>
+                <div class="stat-change">Dr. Maria Santos - Cardiologia</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Consultas Realizadas</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                </div>
+                <div class="stat-value">12</div>
+                <div class="stat-change">+2 este mês</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Exames Pendentes</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                </div>
+                <div class="stat-value">3</div>
+                <div class="stat-change">2 agendados</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-bolt"></i>
+                Ações Rápidas
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <h3 class="action-title">Agendar Consulta</h3>
+                    <p class="action-desc">Marque sua próxima consulta médica</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">Teleconsulta</h3>
+                    <p class="action-desc">Atendimento médico online</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="action-title">Ver Histórico</h3>
+                    <p class="action-desc">Acesse seu histórico clínico</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="action-title">Prescrições</h3>
+                    <p class="action-desc">Visualize suas prescrições</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-clock"></i>
+                Atividade Recente
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="action-title">Consulta Realizada</h3>
+                    <p class="action-desc">Dr. Carlos - Clínico Geral - 10/01/2025</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="action-title">Exame Agendado</h3>
+                    <p class="action-desc">Hemograma - 18/01/2025</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

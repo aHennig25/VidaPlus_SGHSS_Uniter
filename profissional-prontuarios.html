@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuários - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>Dra. Ana Costa</h3>
+                <p>Cardiologista</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="profissional.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="profissional-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="profissional-prontuarios.html" class="nav-link active"><i class="fas fa-notes-medical"></i>Prontuários</a></li>
+                <li class="nav-item"><a href="profissional-receitas.html" class="nav-link"><i class="fas fa-pills"></i>Receitas Digitais</a></li>
+                <li class="nav-item"><a href="profissional-pacientes.html" class="nav-link"><i class="fas fa-users"></i>Meus Pacientes</a></li>
+                <li class="nav-item"><a href="profissional-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Prontuários</h1>
+        <div class="header-actions">
+            <button class="notification-btn"><i class="fas fa-plus"></i>Novo Prontuário</button>
+            <button class="notification-btn"><i class="fas fa-search"></i>Buscar</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Prontuários Pendentes -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-clock"></i>Prontuários Pendentes</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">João Silva</h3>
+                    <p class="action-desc">Consulta: 14/01/2025 às 14:30<br>Status: Aguardando atualização</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Atualizar Prontuário</button>
+                        <button class="btn-secondary">Ver Histórico</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Maria Santos</h3>
+                    <p class="action-desc">Consulta: 13/01/2025 às 13:45<br>Status: Prontuário incompleto</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Atualizar Prontuário</button>
+                        <button class="btn-secondary">Ver Histórico</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Carlos Oliveira</h3>
+                    <p class="action-desc">Consulta: 12/01/2025 às 12:20<br>Status: Exames pendentes</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Atualizar Prontuário</button>
+                        <button class="btn-secondary">Ver Histórico</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Prontuários Recentes -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-history"></i>Prontuários Recentes</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Pedro Almeida</h3>
+                    <p class="action-desc">Atualizado em: 10/01/2025<br>Diagnóstico: Hipertensão controlada</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Editar</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Fernanda Costa</h3>
+                    <p class="action-desc">Atualizado em: 08/01/2025<br>Diagnóstico: Arritmia cardíaca</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Editar</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Roberto Lima</h3>
+                    <p class="action-desc">Atualizado em: 05/01/2025<br>Diagnóstico: Pós-cateterismo</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Atualizar Prontuário -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-edit"></i>Atualizar Prontuário</h2>
+            <div class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-user"></i>Paciente</label>
+                        <select class="form-input">
+                            <option value="">Selecione o paciente</option>
+                            <option value="joao-silva">João Silva</option>
+                            <option value="maria-santos">Maria Santos</option>
+                            <option value="carlos-oliveira">Carlos Oliveira</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-calendar"></i>Data da Consulta</label>
+                        <input type="date" class="form-input" value="2025-01-15">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-comment"></i>Queixa Principal</label>
+                    <textarea class="form-input" rows="2" placeholder="Descreva a queixa principal do paciente..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-stethoscope"></i>Diagnóstico</label>
+                    <textarea class="form-input" rows="2" placeholder="Informe o diagnóstico..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-pills"></i>Prescrições</label>
+                    <textarea class="form-input" rows="3" placeholder="Liste as prescrições médicas..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-flask"></i>Exames Solicitados</label>
+                    <textarea class="form-input" rows="2" placeholder="Liste os exames solicitados..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-secondary"><i class="fas fa-save"></i>Salvar Rascunho</button>
+                    <button class="btn-primary"><i class="fas fa-check"></i>Finalizar Prontuário</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>Dra. Ana Costa</h3>
+                <p>Cardiologista</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="profissional.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="profissional-agenda.html" class="nav-link active"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="profissional-prontuarios.html" class="nav-link"><i class="fas fa-notes-medical"></i>Prontuários</a></li>
+                <li class="nav-item"><a href="profissional-receitas.html" class="nav-link"><i class="fas fa-pills"></i>Receitas Digitais</a></li>
+                <li class="nav-item"><a href="profissional-pacientes.html" class="nav-link"><i class="fas fa-users"></i>Meus Pacientes</a></li>
+                <li class="nav-item"><a href="profissional-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Minha Agenda</h1>
+        <div class="header-actions">
+            <button class="notification-btn">
+                <i class="fas fa-plus"></i>
+                Nova Consulta
+            </button>
+            <button class="notification-btn">
+                <i class="fas fa-cog"></i>
+                Configurar Horários
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Agenda de Hoje -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-day"></i>
+                Agenda de Hoje (15/01/2025)
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">08:00 - Maria Santos</h3>
+                    <p class="action-desc">Primeira consulta - Cardiologia<br>Queixa: Dor no peito</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Consulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">09:30 - João Silva</h3>
+                    <p class="action-desc">Retorno - Cardiologia<br>Controle de hipertensão</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Consulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">11:00 - Carlos Oliveira</h3>
+                    <p class="action-desc">Retorno - Cardiologia<br>Avaliação pós-cateterismo</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Consulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">14:00 - Ana Paula (Teleconsulta)</h3>
+                    <p class="action-desc">Primeira consulta - Cardiologia<br>Orientação sobre arritmia</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Teleconsulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">15:30 - Pedro Almeida</h3>
+                    <p class="action-desc">Retorno - Cardiologia<br>Controle de medicação</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Consulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">17:00 - Fernanda Costa</h3>
+                    <p class="action-desc">Retorno - Cardiologia<br>Avaliação de exames</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Iniciar Consulta</button>
+                        <button class="btn-secondary">Ver Prontuário</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Próximos Dias -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-week"></i>
+                Próximos Dias
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3 class="action-title">Amanhã (16/01/2025)</h3>
+                    <p class="action-desc">6 consultas agendadas<br>2 teleconsultas</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Agenda</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3 class="action-title">Quinta-feira (17/01/2025)</h3>
+                    <p class="action-desc">8 consultas agendadas<br>1 teleconsulta</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Agenda</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3 class="action-title">Sexta-feira (18/01/2025)</h3>
+                    <p class="action-desc">5 consultas agendadas<br>3 teleconsultas</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Agenda</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3 class="action-title">Segunda-feira (21/01/2025)</h3>
+                    <p class="action-desc">7 consultas agendadas<br>2 teleconsultas</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Agenda</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consultas Realizadas Hoje -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-check-circle"></i>
+                Consultas Realizadas Hoje
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="action-title">Roberto Lima - 07:00</h3>
+                    <p class="action-desc">Retorno - Cardiologia<br>Diagnóstico: Hipertensão controlada</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Atualizar Prontuário</button>
+                        <button class="btn-secondary">Emitir Receita</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="action-title">Lucia Ferreira - 06:30</h3>
+                    <p class="action-desc">Primeira consulta - Cardiologia<br>Diagnóstico: Arritmia cardíaca</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Atualizar Prontuário</button>
+                        <button class="btn-secondary">Solicitar Exames</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configurações de Horário -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-cog"></i>
+                Configurações de Horário
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">Horário de Atendimento</h3>
+                    <p class="action-desc">Segunda a Sexta: 06:00 - 18:00<br>Sábado: 08:00 - 12:00</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Editar Horários</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3 class="action-title">Duração das Consultas</h3>
+                    <p class="action-desc">Primeira consulta: 30 min<br>Retorno: 20 min</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Configurar</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="action-title">Bloqueios de Horário</h3>
+                    <p class="action-desc">Almoço: 12:00 - 13:00<br>Reuniões: Quarta 14:00</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Gerenciar Bloqueios</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <h3 class="action-title">Disponibilidade</h3>
+                    <p class="action-desc">Próximos 30 dias<br>Slots disponíveis: 120</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Calendário</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Estatísticas da Semana -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-chart-bar"></i>
+                Estatísticas da Semana
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="action-title">Total de Consultas</h3>
+                    <p class="action-desc">Esta semana: 45 consultas<br>Média diária: 9 consultas</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">Teleconsultas</h3>
+                    <p class="action-desc">Esta semana: 12 teleconsultas<br>25% do total</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">Tempo Médio</h3>
+                    <p class="action-desc">Primeira consulta: 28 min<br>Retorno: 18 min</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="action-title">Avaliações</h3>
+                    <p class="action-desc">Média: 4.8/5.0<br>Total: 38 avaliações</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

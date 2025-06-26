@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Leitos - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>Dr. Roberto Silva</h3>
+                <p>Administrador</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="admin.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="admin-cadastros.html" class="nav-link"><i class="fas fa-users"></i>Gestão de Cadastros</a></li>
+                <li class="nav-item"><a href="admin-leitos.html" class="nav-link active"><i class="fas fa-bed"></i>Controle de Leitos</a></li>
+                <li class="nav-item"><a href="admin-relatorios.html" class="nav-link"><i class="fas fa-chart-bar"></i>Relatórios</a></li>
+                <li class="nav-item"><a href="admin-configuracoes.html" class="nav-link"><i class="fas fa-cog"></i>Configurações</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Controle de Leitos</h1>
+        <div class="header-actions">
+            <button class="notification-btn"><i class="fas fa-plus"></i>Novo Leito</button>
+            <button class="notification-btn"><i class="fas fa-download"></i>Exportar</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Estatísticas de Leitos -->
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Total de Leitos</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                </div>
+                <div class="stat-value">120</div>
+                <div class="stat-change">12 unidades</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Leitos Ocupados</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                </div>
+                <div class="stat-value">98</div>
+                <div class="stat-change">81.7% ocupação</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Leitos Disponíveis</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="stat-value">22</div>
+                <div class="stat-change">18.3% disponível</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Internações Hoje</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+                <div class="stat-value">8</div>
+                <div class="stat-change">+3 alta médica</div>
+            </div>
+        </div>
+
+        <!-- Status por Unidade -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-hospital"></i>Status por Unidade</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="action-title">UTI - Unidade 1</h3>
+                    <p class="action-desc">10/12 leitos ocupados<br>83.3% ocupação</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                        <button class="btn-secondary">Gerenciar</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-procedures"></i></div>
+                    <h3 class="action-title">Enfermaria - Ala A</h3>
+                    <p class="action-desc">25/30 leitos ocupados<br>83.3% ocupação</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                        <button class="btn-secondary">Gerenciar</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-procedures"></i></div>
+                    <h3 class="action-title">Enfermaria - Ala B</h3>
+                    <p class="action-desc">28/35 leitos ocupados<br>80.0% ocupação</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                        <button class="btn-secondary">Gerenciar</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-baby"></i></div>
+                    <h3 class="action-title">Pediatria</h3>
+                    <p class="action-desc">15/20 leitos ocupados<br>75.0% ocupação</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                        <button class="btn-secondary">Gerenciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Internações Ativas -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-user-injured"></i>Internações Ativas</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">João Silva</h3>
+                    <p class="action-desc">Leito: 101-A - UTI<br>Entrada: 12/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Alta</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Maria Santos</h3>
+                    <p class="action-desc">Leito: 205-B - Enfermaria<br>Entrada: 10/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Alta</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Carlos Oliveira</h3>
+                    <p class="action-desc">Leito: 103-A - UTI<br>Entrada: 14/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Alta</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3 class="action-title">Pedro Almeida</h3>
+                    <p class="action-desc">Leito: 301-A - Enfermaria<br>Entrada: 13/01/2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Alta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nova Internação -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-plus-circle"></i>Nova Internação</h2>
+            <div class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-user"></i>Paciente</label>
+                        <select class="form-input">
+                            <option value="">Selecione o paciente</option>
+                            <option value="joao-silva">João Silva</option>
+                            <option value="maria-santos">Maria Santos</option>
+                            <option value="carlos-oliveira">Carlos Oliveira</option>
+                            <option value="pedro-almeida">Pedro Almeida</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-bed"></i>Leito</label>
+                        <select class="form-input">
+                            <option value="">Selecione o leito</option>
+                            <option value="101-a">101-A - UTI</option>
+                            <option value="102-a">102-A - UTI</option>
+                            <option value="201-a">201-A - Enfermaria</option>
+                            <option value="202-a">202-A - Enfermaria</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-calendar"></i>Data de Entrada</label>
+                        <input type="date" class="form-input" value="2025-01-15">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-user-md"></i>Médico Responsável</label>
+                        <select class="form-input">
+                            <option value="">Selecione o médico</option>
+                            <option value="dr-carlos">Dr. Carlos Mendes</option>
+                            <option value="dra-ana">Dra. Ana Costa</option>
+                            <option value="dr-paulo">Dr. Paulo Santos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-stethoscope"></i>Diagnóstico</label>
+                    <textarea class="form-input" rows="2" placeholder="Informe o diagnóstico..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-comment"></i>Observações</label>
+                    <textarea class="form-input" rows="3" placeholder="Observações sobre a internação..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-secondary"><i class="fas fa-save"></i>Salvar Rascunho</button>
+                    <button class="btn-primary"><i class="fas fa-user-plus"></i>Internar Paciente</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

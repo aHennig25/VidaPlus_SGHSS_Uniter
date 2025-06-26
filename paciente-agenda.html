@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>João Silva</h3>
+                <p>Paciente</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="paciente.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="paciente-agenda.html" class="nav-link active"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="paciente-exames.html" class="nav-link"><i class="fas fa-flask"></i>Meus Exames</a></li>
+                <li class="nav-item"><a href="paciente-historico.html" class="nav-link"><i class="fas fa-notes-medical"></i>Histórico Clínico</a></li>
+                <li class="nav-item"><a href="paciente-prescricoes.html" class="nav-link"><i class="fas fa-pills"></i>Prescrições</a></li>
+                <li class="nav-item"><a href="paciente-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Minha Agenda</h1>
+        <div class="header-actions">
+            <button class="notification-btn">
+                <i class="fas fa-plus"></i>
+                Nova Consulta
+            </button>
+            <button class="notification-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Próximas Consultas -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-check"></i>
+                Próximas Consultas
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Dr. Carlos Mendes</h3>
+                    <p class="action-desc">Cardiologia - 15/01/2025 às 14:30</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                        <button class="btn-secondary">Reagendar</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Dra. Ana Costa</h3>
+                    <p class="action-desc">Clínico Geral - 20/01/2025 às 10:00</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                        <button class="btn-secondary">Reagendar</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">Teleconsulta - Dr. Roberto</h3>
+                    <p class="action-desc">Psicologia - 22/01/2025 às 16:00</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Entrar na Consulta</button>
+                        <button class="btn-secondary">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consultas Realizadas -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-check-circle"></i>
+                Consultas Realizadas
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Dr. Paulo Santos</h3>
+                    <p class="action-desc">Ortopedia - 10/01/2025 às 09:00</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Avaliar</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Dra. Fernanda Lima</h3>
+                    <p class="action-desc">Dermatologia - 05/01/2025 às 11:30</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Avaliar</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">Teleconsulta - Dr. Miguel</h3>
+                    <p class="action-desc">Nutrição - 03/01/2025 às 15:00</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Prontuário</button>
+                        <button class="btn-secondary">Avaliar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agendar Nova Consulta -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-plus-circle"></i>
+                Agendar Nova Consulta
+            </h2>
+            
+            <!-- Formulário de Agendamento -->
+            <div class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-stethoscope"></i>
+                            Especialidade
+                        </label>
+                        <select class="form-input">
+                            <option value="">Selecione uma especialidade</option>
+                            <option value="cardiologia">Cardiologia</option>
+                            <option value="ortopedia">Ortopedia</option>
+                            <option value="dermatologia">Dermatologia</option>
+                            <option value="psicologia">Psicologia</option>
+                            <option value="nutricao">Nutrição</option>
+                            <option value="clinico-geral">Clínico Geral</option>
+                            <option value="ginecologia">Ginecologia</option>
+                            <option value="pediatria">Pediatria</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-user-md"></i>
+                            Profissional
+                        </label>
+                        <select class="form-input">
+                            <option value="">Selecione um profissional</option>
+                            <option value="dr-carlos">Dr. Carlos Mendes - Cardiologia</option>
+                            <option value="dra-ana">Dra. Ana Costa - Cardiologia</option>
+                            <option value="dr-paulo">Dr. Paulo Santos - Ortopedia</option>
+                            <option value="dra-fernanda">Dra. Fernanda Lima - Dermatologia</option>
+                            <option value="dr-roberto">Dr. Roberto Silva - Psicologia</option>
+                            <option value="dr-miguel">Dr. Miguel Oliveira - Nutrição</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-calendar"></i>
+                            Data Preferencial
+                        </label>
+                        <input type="date" class="form-input" min="2025-01-15">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-clock"></i>
+                            Horário Preferencial
+                        </label>
+                        <select class="form-input">
+                            <option value="">Selecione um horário</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">
+                        <i class="fas fa-comment"></i>
+                        Observações
+                    </label>
+                    <textarea class="form-input" rows="3" placeholder="Descreva o motivo da consulta ou informações adicionais..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">
+                        <i class="fas fa-video"></i>
+                        Tipo de Consulta
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="tipo-consulta" value="presencial" checked>
+                            <span class="radio-custom"></span>
+                            <i class="fas fa-user"></i>
+                            Presencial
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="tipo-consulta" value="teleconsulta">
+                            <span class="radio-custom"></span>
+                            <i class="fas fa-video"></i>
+                            Teleconsulta
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button class="btn-secondary">
+                        <i class="fas fa-search"></i>
+                        Verificar Disponibilidade
+                    </button>
+                    <button class="btn-primary">
+                        <i class="fas fa-calendar-plus"></i>
+                        Agendar Consulta
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Opções Rápidas -->
+            <div class="quick-options">
+                <h3 class="section-subtitle">
+                    <i class="fas fa-bolt"></i>
+                    Opções Rápidas
+                </h3>
+                <div class="action-grid">
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="action-title">Buscar Especialidade</h3>
+                        <p class="action-desc">Encontre o profissional ideal</p>
+                        <div class="card-actions">
+                            <button class="btn-primary">Buscar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                        <h3 class="action-title">Agendamento Rápido</h3>
+                        <p class="action-desc">Marque com profissionais conhecidos</p>
+                        <div class="card-actions">
+                            <button class="btn-primary">Agendar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="action-title">Agendamento por Telefone</h3>
+                        <p class="action-desc">Ligue para nossa central</p>
+                        <div class="card-actions">
+                            <button class="btn-primary">Ligar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lembretes e Notificações -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-bell"></i>
+                Lembretes e Notificações
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">Lembrete de Consulta</h3>
+                    <p class="action-desc">Dr. Carlos Mendes - Amanhã às 14:30</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Confirmar</button>
+                        <button class="btn-secondary">Reagendar</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="action-title">Exame Pendente</h3>
+                    <p class="action-desc">Hemograma completo - Agendar</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Agendar Exame</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="action-title">Medicamento</h3>
+                    <p class="action-desc">Hora de tomar sua medicação</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

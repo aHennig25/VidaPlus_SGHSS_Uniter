@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Digitais - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>Dra. Ana Costa</h3>
+                <p>Cardiologista</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="profissional.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="profissional-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="profissional-prontuarios.html" class="nav-link"><i class="fas fa-notes-medical"></i>Prontuários</a></li>
+                <li class="nav-item"><a href="profissional-receitas.html" class="nav-link active"><i class="fas fa-pills"></i>Receitas Digitais</a></li>
+                <li class="nav-item"><a href="profissional-pacientes.html" class="nav-link"><i class="fas fa-users"></i>Meus Pacientes</a></li>
+                <li class="nav-item"><a href="profissional-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Receitas Digitais</h1>
+        <div class="header-actions">
+            <button class="notification-btn"><i class="fas fa-plus"></i>Nova Receita</button>
+            <button class="notification-btn"><i class="fas fa-download"></i>Exportar</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Receitas Recentes -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-clock"></i>Receitas Recentes</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">João Silva</h3>
+                    <p class="action-desc">Emitida em: 14/01/2025<br>Medicamentos: Losartana 50mg</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                        <button class="btn-secondary">Reenviar</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Maria Santos</h3>
+                    <p class="action-desc">Emitida em: 13/01/2025<br>Medicamentos: Metformina 850mg</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                        <button class="btn-secondary">Reenviar</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Carlos Oliveira</h3>
+                    <p class="action-desc">Emitida em: 12/01/2025<br>Medicamentos: AAS 100mg</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                        <button class="btn-secondary">Reenviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Histórico de Receitas -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-history"></i>Histórico de Receitas</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Pedro Almeida</h3>
+                    <p class="action-desc">Emitida em: 10/01/2025<br>Medicamentos: Losartana 50mg, Metformina 850mg</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Fernanda Costa</h3>
+                    <p class="action-desc">Emitida em: 08/01/2025<br>Medicamentos: Propranolol 40mg</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon"><i class="fas fa-capsules"></i></div>
+                    <h3 class="action-title">Roberto Lima</h3>
+                    <p class="action-desc">Emitida em: 05/01/2025<br>Medicamentos: AAS 100mg, Sinvastatina 20mg</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Receita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Emitir Nova Receita -->
+        <div class="content-section">
+            <h2 class="section-title"><i class="fas fa-plus-circle"></i>Emitir Nova Receita</h2>
+            <div class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-user"></i>Paciente</label>
+                        <select class="form-input">
+                            <option value="">Selecione o paciente</option>
+                            <option value="joao-silva">João Silva</option>
+                            <option value="maria-santos">Maria Santos</option>
+                            <option value="carlos-oliveira">Carlos Oliveira</option>
+                            <option value="pedro-almeida">Pedro Almeida</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-calendar"></i>Data de Emissão</label>
+                        <input type="date" class="form-input" value="2025-01-15">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-pills"></i>Medicamentos</label>
+                    <div class="medication-list">
+                        <div class="medication-item">
+                            <input type="text" class="form-input" placeholder="Nome do medicamento">
+                            <input type="text" class="form-input" placeholder="Dosagem">
+                            <input type="text" class="form-input" placeholder="Posologia">
+                            <button class="btn-secondary"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-comment"></i>Observações</label>
+                    <textarea class="form-input" rows="3" placeholder="Observações sobre a prescrição..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><i class="fas fa-calendar"></i>Validade da Receita</label>
+                    <select class="form-input">
+                        <option value="30">30 dias</option>
+                        <option value="60">60 dias</option>
+                        <option value="90">90 dias</option>
+                        <option value="120">120 dias</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-secondary"><i class="fas fa-save"></i>Salvar Rascunho</button>
+                    <button class="btn-primary"><i class="fas fa-paper-plane"></i>Emitir Receita</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

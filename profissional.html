@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Profissional - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>Dra. Ana Costa</h3>
+                <p>Cardiologista</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="profissional.html" class="nav-link active"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="profissional-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="profissional-prontuarios.html" class="nav-link"><i class="fas fa-notes-medical"></i>Prontuários</a></li>
+                <li class="nav-item"><a href="profissional-receitas.html" class="nav-link"><i class="fas fa-pills"></i>Receitas Digitais</a></li>
+                <li class="nav-item"><a href="profissional-pacientes.html" class="nav-link"><i class="fas fa-users"></i>Meus Pacientes</a></li>
+                <li class="nav-item"><a href="profissional-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Dashboard do Profissional</h1>
+        <div class="header-actions">
+            <button class="notification-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+            <button class="notification-btn">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dashboard Stats -->
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Consultas Hoje</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                </div>
+                <div class="stat-value">8</div>
+                <div class="stat-change">3 realizadas, 5 pendentes</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Pacientes Atendidos</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                </div>
+                <div class="stat-value">156</div>
+                <div class="stat-change">+12 este mês</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Prontuários Pendentes</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                </div>
+                <div class="stat-value">5</div>
+                <div class="stat-change">2 urgentes</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-title">Teleconsultas</span>
+                    <div class="stat-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                </div>
+                <div class="stat-value">3</div>
+                <div class="stat-change">Agendadas para hoje</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-bolt"></i>
+                Ações Rápidas
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <h3 class="action-title">Agendar Consulta</h3>
+                    <p class="action-desc">Marque uma nova consulta</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-notes-medical"></i>
+                    </div>
+                    <h3 class="action-title">Atualizar Prontuário</h3>
+                    <p class="action-desc">Registre informações do paciente</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="action-title">Emitir Receita</h3>
+                    <p class="action-desc">Crie receita digital</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">Iniciar Teleconsulta</h3>
+                    <p class="action-desc">Atendimento online</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-clock"></i>
+                Atividade Recente
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="action-title">Consulta Realizada</h3>
+                    <p class="action-desc">João Silva - Cardiologia - 14:30</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="action-title">Prontuário Atualizado</h3>
+                    <p class="action-desc">Maria Santos - 13:45</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="action-title">Receita Emitida</h3>
+                    <p class="action-desc">Carlos Oliveira - 12:20</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">Teleconsulta Agendada</h3>
+                    <p class="action-desc">Ana Paula - 16:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Próximas Consultas -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-alt"></i>
+                Próximas Consultas
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">15:30 - Pedro Almeida</h3>
+                    <p class="action-desc">Retorno - Cardiologia</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">16:00 - Ana Paula</h3>
+                    <p class="action-desc">Teleconsulta - Primeira vez</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">16:30 - Roberto Lima</h3>
+                    <p class="action-desc">Consulta - Cardiologia</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">17:00 - Fernanda Costa</h3>
+                    <p class="action-desc">Retorno - Cardiologia</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

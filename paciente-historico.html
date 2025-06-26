@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico Clínico - Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="Vida Plus Logo">
+                <p>Sistema de Gestão Hospitalar</p>
+            </div>
+        </div>
+        
+        <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-details">
+                <h3>João Silva</h3>
+                <p>Paciente</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="paciente.html" class="nav-link"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="paciente-agenda.html" class="nav-link"><i class="fas fa-calendar-alt"></i>Minha Agenda</a></li>
+                <li class="nav-item"><a href="paciente-exames.html" class="nav-link"><i class="fas fa-flask"></i>Meus Exames</a></li>
+                <li class="nav-item"><a href="paciente-historico.html" class="nav-link active"><i class="fas fa-notes-medical"></i>Histórico Clínico</a></li>
+                <li class="nav-item"><a href="paciente-prescricoes.html" class="nav-link"><i class="fas fa-pills"></i>Prescrições</a></li>
+                <li class="nav-item"><a href="paciente-teleconsulta.html" class="nav-link"><i class="fas fa-video"></i>Teleconsulta</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Histórico Clínico</h1>
+        <div class="header-actions">
+            <button class="notification-btn">
+                <i class="fas fa-download"></i>
+                Exportar
+            </button>
+            <button class="notification-btn">
+                <i class="fas fa-print"></i>
+                Imprimir
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Informações Gerais -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-user"></i>
+                Informações Gerais
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3 class="action-title">Dados Pessoais</h3>
+                    <p class="action-desc">Nome: João Silva<br>Idade: 35 anos<br>Tipo Sanguíneo: O+</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="action-title">Condições Crônicas</h3>
+                    <p class="action-desc">Hipertensão arterial<br>Diabetes tipo 2</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-allergies"></i>
+                    </div>
+                    <h3 class="action-title">Alergias</h3>
+                    <p class="action-desc">Penicilina<br>Dipirona</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="action-title">Medicamentos Atuais</h3>
+                    <p class="action-desc">Losartana 50mg<br>Metformina 850mg</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consultas Recentes -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-stethoscope"></i>
+                Consultas Recentes
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Dr. Paulo Santos - Ortopedia</h3>
+                    <p class="action-desc">Data: 10/01/2025<br>Queixa: Dor no joelho direito<br>Diagnóstico: Tendinite patelar</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Dra. Fernanda Lima - Dermatologia</h3>
+                    <p class="action-desc">Data: 05/01/2025<br>Queixa: Manchas na pele<br>Diagnóstico: Melasma</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Dr. Carlos Mendes - Cardiologia</h3>
+                    <p class="action-desc">Data: 28/12/2024<br>Queixa: Pressão alta<br>Diagnóstico: Hipertensão controlada</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="action-title">Dr. Miguel - Nutrição (Teleconsulta)</h3>
+                    <p class="action-desc">Data: 03/01/2025<br>Queixa: Orientação alimentar<br>Diagnóstico: Plano alimentar personalizado</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exames Realizados -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-flask"></i>
+                Exames Realizados
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="action-title">Hemograma Completo</h3>
+                    <p class="action-desc">Data: 08/01/2025<br>Resultado: Normal</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="action-title">Eletrocardiograma</h3>
+                    <p class="action-desc">Data: 05/01/2025<br>Resultado: Normal</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3 class="action-title">Glicemia em Jejum</h3>
+                    <p class="action-desc">Data: 03/01/2025<br>Resultado: 95 mg/dL (Normal)</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3 class="action-title">Ressonância do Joelho</h3>
+                    <p class="action-desc">Data: 30/12/2024<br>Resultado: Tendinite patelar</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Resultado</button>
+                        <button class="btn-secondary">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cirurgias e Procedimentos -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-procedures"></i>
+                Cirurgias e Procedimentos
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="action-title">Apendicectomia</h3>
+                    <p class="action-desc">Data: 15/06/2020<br>Hospital: Hospital São Lucas<br>Cirurgião: Dr. Roberto Almeida</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                    </div>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="action-title">Extração de Siso</h3>
+                    <p class="action-desc">Data: 10/03/2019<br>Dentista: Dr. Ana Paula<br>Clínica: Sorriso Perfeito</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vacinas -->
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-syringe"></i>
+                Carteira de Vacinação
+            </h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="action-title">Vacinas em Dia</h3>
+                    <p class="action-desc">COVID-19 (3 doses)<br>Influenza 2024<br>Hepatite B</p>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="action-title">Próximas Vacinas</h3>
+                    <p class="action-desc">Influenza 2025 - Março<br>Tétano - Agosto 2025</p>
+                    <div class="card-actions">
+                        <button class="btn-primary">Agendar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vida Plus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 
